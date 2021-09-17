@@ -4,7 +4,9 @@ import lxml
 from gc import collect as DEL
 from certifi import where as certificate
 from requests import get as req_get
-
+from tqdm.auto import tqdm
+from colorama import Fore, Style
+import time
 
 def URL_pull(site, macOS=False):
 
@@ -78,4 +80,8 @@ class BS4_parser:
 inp = input('Enter the website that you want to scrape:: ')
 parser = BS4_parser(inp)
 get_info = parser.info()
+print(Fore.CYAN + Style.BRIGHT + 'Processing..\n')
+time.sleep(1)
+for k in tqdm(range(10000)):
+  print(Fore.CYAN + Style.BRIGHT + ' ', end='\r')
 print(get_info)
