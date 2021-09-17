@@ -87,4 +87,4 @@ for k in tqdm(range(10000)):
 time.sleep(1)
 os.system('clear')
 time.sleep(1)
-print(get_info)
+print(Fore.WHITE + str(get_info))
