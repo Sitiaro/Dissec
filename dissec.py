@@ -77,7 +77,7 @@ class BS4_parser:
 
         return info
 
-inp = input('Enter the website that you want to scrape:: ')
+inp = input('Enter the website that you want to scrape;(example - www.mega.nz) :: ')
 parser = BS4_parser(inp)
 get_info = parser.info()
 print(Fore.CYAN + Style.BRIGHT + 'Processing..\n')
