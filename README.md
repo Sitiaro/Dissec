@@ -17,4 +17,4 @@ Run the script using: ```python dissec.py```
 
 It'll prompt you, asking for a website that you want to scrape. Enter any website that you want to scrape. The website can be with or without https, ex:
 
-www.mega.nz or https:www.mega.nz, in this, both of them will work the same.
+www.mega.nz or https://www.mega.nz, in this, both of them will work the same.
