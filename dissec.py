@@ -6,7 +6,7 @@ from certifi import where as certificate
 from requests import get as req_get
 from tqdm.auto import tqdm
 from colorama import Fore, Style
-import time
+import time, os
 
 def URL_pull(site, macOS=False):
 
@@ -84,4 +84,7 @@ print(Fore.CYAN + Style.BRIGHT + 'Processing..\n')
 time.sleep(1)
 for k in tqdm(range(10000)):
   print(Fore.CYAN + Style.BRIGHT + ' ', end='\r')
+time.sleep(1)
+os.system('clear')
+time.sleep(1)
 print(get_info)
