@@ -1,6 +1,8 @@
 # Dissec
 A simple python web scraper.
 
+It gets a website and its contents and parses them with the help of bs4.
+
 ## Installation
 
 To install the requirements, run the following commands;
